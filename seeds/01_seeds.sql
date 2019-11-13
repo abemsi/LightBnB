@@ -10,7 +10,7 @@ VALUES (1, 'Eva Stanley', 'evastanley@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvme
 (2, 'Louisa Meyer', 'louisameyer@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u'),
 (3, 'Dominic Parks', 'dominicparks@gmail.com', '$2a$10$FB/BOAVhpuLvpOREQVmvmezD4ED/.JBIDRh70tGevYzYzQgFId2u');
 
-INSERT INTO properties (id, title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms, number_of_bedrooms, street, city, province, postcode, country, active)
+INSERT INTO properties (id, title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms, number_of_bedrooms, street, city, province, post_code, country, active)
 VALUES (1, 'Speed Lamp', 'description', 'https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2121121/pexels-photo-2121121.jpeg', 650, 4, 5, 6, '536 Namsub Highway', 'Sotboske', 'Quebec', 'T2T0E7', 'Canada', true),
 (2, 'Blank Corner', 'description', 'https://images.pexels.com/photos/2080018/pexels-photo-22080018.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/2080018/pexels-photo-22080018.jpeg', 750, 3, 4, 6, '651 Nami Road', 'Calgary', 'Alberta', 'T2R0F9', 'Canada', true),
 (3, 'Habit Mix', 'description', 'https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&h=350', 'https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg', 850, 4, 4, 4, '513 Powov Grove', 'Kingston', 'Ontario', 'W2F0P8', 'Canada', true);
