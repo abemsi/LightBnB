@@ -152,7 +152,7 @@ const getAllProperties = function(options, limit = 10) {
   let queryString = `
   SELECT properties.*, avg(property_reviews.rating) as average_rating
   FROM properties
-  JOIN property_reviews ON properties.id = property_id
+  LEFT OUTER JOIN property_reviews ON properties.id = property_id
   `;
   let whereStr = '';
   // 3
@@ -161,7 +161,7 @@ const getAllProperties = function(options, limit = 10) {
     whereStr += `WHERE city LIKE $${queryParams.length} `;
   }
   if (options.owner_id) {
-    queryParams.push(`%${options.owner_id}%`);
+    queryParams.push(`${options.owner_id}`);
     whereStr += `AND owner_id = $${queryParams.length} `;
   }
   if (options.minimum_price_per_night && options.maximum_price_per_night) {
